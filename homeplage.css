@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  width: 100%;
+  height: auto;
+  line-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 98%;
+  height: auto;
+  font-size: 1rem;
+  background-color: black;
+  background: linear-gradient(to right, navy, blue);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(1fr 2fr 1fr);
+  grid-template-rows: 2fr 2fr 2fr;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 10px 0px;
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px;
+  margin: 5px 0;
+  background: linear-gradient(to right, rgb(141, 129, 129), rgb(69, 69, 114));
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 0.6rem;
+  }
+}
+
+.nav .logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav .logo {
+    background: blue;
+    box-shadow: 1px 1px 10px 1px pink;
+  }
+}
+
+.nav .logo a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav .logo a:hover {
+  font-size: 1.1rem;
+}
+
+.nav .menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav .menu a {
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav .menu a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav .menu a:nth-child(1):hover {
+  font-size: 1.1rem;
+}
+
+.nav .menu a:nth-child(2):hover {
+  font-size: 1.1rem;
+}
+.nav .menu a:nth-child(3):hover {
+  font-size: 1.1rem;
+}
+
+.nav .social {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 40px;
+}
+
+.nav .social a {
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  transition: 0.5s ease;
+  transform-origin: center;
+}
+
+.nav .social a:hover {
+  background: linear-gradient(to right, pink, blue);
+  animation: rotateInfinity 2s linear infinite;
+}
+
+.nav .social a:nth-child(1):hover {
+  background: linear-gradient(to right, pink, blue);
+}
+
+.nav .social a:nth-child(2):hover {
+  background: linear-gradient(to right, pink, blue);
+}
+
+.nav .social a:nth-child(3):hover {
+  background: linear-gradient(to right, pink, blue);
+}
+
+@keyframes rotateInfinity {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
