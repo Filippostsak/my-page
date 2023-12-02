@@ -1,0 +1,341 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  width: 100%;
+  height: auto;
+  line-height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 98%;
+  height: auto;
+  font-size: 10px;
+  background-color: black;
+  background: linear-gradient(to right, rgb(134, 134, 226), rgb(25, 25, 69));
+}
+
+hr {
+  width: 98%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(1fr 2fr 1fr);
+  grid-template-rows: 2fr 2fr 2fr;
+  width: 100%;
+  height: 9rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem;
+  margin: 0.5rem 0rem;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    font-size: 0.6rem;
+  }
+}
+
+.nav .logo {
+  display: flex;
+
+  align-items: center;
+  padding: 0.4rem;
+  width: 4rem;
+  height: 4rem;
+  margin-left: 0.5rem;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav .logo {
+    box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem pink;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav .logo a img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.nav .logo a img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px black;
+  transition: 0.3s ease;
+}
+
+.nav .logo a img:hover {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.nav .logo a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav .logo a:hover {
+  font-size: 1.1rem;
+}
+
+.nav .menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.nav .menu a {
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav .menu a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.nav .menu a:nth-child(1):hover {
+  font-size: 1.1rem;
+}
+
+.nav .menu a:nth-child(2):hover {
+  font-size: 1.1rem;
+}
+.nav .menu a:nth-child(3):hover {
+  font-size: 1.1rem;
+}
+
+.nav .social {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 4rem;
+}
+
+.nav .social a {
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  align-self: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  transition: 0.4s ease;
+}
+
+.nav .social a:nth-child(1):hover {
+  font-size: 1.2rem;
+}
+
+.nav .social a:nth-child(2):hover {
+  font-size: 1.2rem;
+}
+
+.nav .social a:nth-child(3):hover {
+  font-size: 1.2rem;
+}
+
+ooter {
+  margin-top: 4rem;
+  width: 98%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer-1 {
+  display: flex;
+  padding: 0.4rem;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+  border-radius: 1rem;
+}
+
+footer .footer-1 .menu-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+footer .footer-1 .menu-2 a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 900px) {
+  footer .footer-1 .menu-2 a {
+    width: 10rem;
+  }
+}
+
+footer .footer-1 .menu-2 a:nth-child(1):hover {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+footer .footer-1 .menu-2 a:nth-child(1) {
+  transition: 0.3s ease;
+}
+
+footer .footer-1 .menu-2 a:nth-child(2) {
+  padding-top: 1.2rem;
+  transition: 0.3s ease;
+}
+
+footer .footer-1 .menu-2 a:nth-child(2):hover {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+  footer .footer-1 .menu-2 a:nth-child(2) {
+    padding-top: 2.5rem;
+  }
+}
+
+footer .footer-1 .menu-2 a:nth-child(3) {
+  padding-top: 1.2rem;
+  transition: 0.3s ease;
+}
+
+footer .footer-1 .menu-2 a:nth-child(3):hover {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px) {
+  footer .footer-1 .menu-2 a:nth-child(3) {
+    padding-top: 2.5rem;
+  }
+}
+
+.footer-1 .email-form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+}
+
+.footer-1 .email-form h3 {
+  font-size: 1rem;
+}
+
+.footer-1 .email-form p {
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.footer-1 .email-form a {
+  font-size: 0.6rem;
+  color: gold;
+  transition: 0.3s ease;
+}
+
+.footer-1 .email-form a:hover {
+  font-size: 1rem;
+}
+
+.email-form .btn-2 {
+  display: flex;
+  width: 30rem;
+  height: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .email-form .btn-2 {
+    width: 24rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .email-form .btn-2 {
+    width: 12rem;
+  }
+}
+
+.email-form .btn-2 input::placeholder {
+  text-align: center;
+}
+
+.email-form .btn-2 button {
+  color: black;
+  text-align: center;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  width: 100px;
+  box-shadow: 1px 1px 10px 1px white;
+  transition: 0.3s ease;
+}
+
+.email-form .btn-2 button:hover {
+  cursor: pointer;
+  background: linear-gradient(to right, green, yellow);
+  font-size: 1rem;
+  font-weight: bolder;
+  box-shadow: 1px 1px 10px 1px green;
+}
+
+.copyright {
+  width: 98%;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 1rem;
+}
