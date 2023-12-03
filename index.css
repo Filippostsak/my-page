@@ -15,7 +15,7 @@
 body {
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
-  width: 98%;
+  width: 100%;
   height: auto;
   font-size: 10px;
   background-color: black;
@@ -468,4 +468,123 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   text-align: center;
   font-family: Arial, sans-serif;
   border-radius: 1rem;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 98%;
+  height: auto;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .section2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.h2-2 {
+  margin-top: 5rem;
+  width: 100%;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .h2-2 {
+    font-size: 1rem;
+    padding-top: 1rem;
+    border-radius: 0;
+  }
+}
+
+.section2 .knowledge {
+  width: 10rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  border: 1px solid black;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+  border-radius: 1rem;
+  transition: 0.3s ease;
+}
+
+.section2 .knowledge:hover {
+  box-shadow: 0.1rem 0.1rem 1.5rem 0.1rem black;
+}
+
+.section2 .knowledge .card-2 {
+  padding-top: 1rem;
+}
+
+.section2 .knowledge .card-2 .h3-card-2 {
+  color: gold;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.section2 .knowledge .card-2 img {
+  padding-bottom: 0.6rem;
+}
+
+.btns-sec2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.btns-sec2 .card2-btn {
+  border: none;
+  margin-top: 0.5rem;
+  width: 6rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2.5rem;
+  background: linear-gradient(to right, rgb(58, 58, 200), rgb(183, 23, 23));
+  box-shadow: 0.1rem 0.1rem 1rem;
+  color: black;
+  margin-bottom: 2.2rem;
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  text-align: center;
+  top: 2.5rem;
+}
+
+.rating i {
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.rating i:nth-child(1) {
+}
+
+.rating i:nth-child(2) {
+}
+
+.rating i:nth-child(3) {
+}
+
+.rating i:nth-child(4) {
+}
+
+.rating i:nth-child(5) {
 }
