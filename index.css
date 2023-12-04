@@ -569,7 +569,11 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   top: 2.5rem;
 }
 
-.rating i {
+.fa-star {
   cursor: pointer;
   font-size: 0.7rem;
+}
+
+.fa-star.active {
+  color: rgb(237, 209, 52);
 }
