@@ -1,11 +1,10 @@
-const rating = document.querySelectorAll(".fa-star");
-
-rating.forEach((item, index1) => {
-  item.addEventListener("click", () => {
-    rating.forEach((rating, index2) => {
-      index1 >= index2
-        ? rating.classList.add("active")
-        : rating.classList.remove("active");
-    });
+function setRating(ratingValue) {
+  const stars = document.querySelectorAll(".fa-star");
+  stars.forEach((star, index) => {
+    if (index < ratingValue) {
+      star.classList.add("active");
+    } else {
+      star.classList.remove("active");
+    }
   });
-});
+}
