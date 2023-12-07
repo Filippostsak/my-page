@@ -304,12 +304,6 @@ h2:hover {
   height: 2rem;
 }
 
-@media only screen and (min-width: 900px) {
-  .card-1 a {
-    top: 25.5rem;
-  }
-}
-
 .card-1 a:hover {
   font-size: 1rem;
   left: 11rem;
@@ -584,17 +578,4 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 .btns-sec2 a:hover {
   font-size: 1rem;
   font-weight: bolder;
-}
-
-/* Initially hide the animation */
-.animate__animated {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.3s ease-in-out;
-}
-
-/* When the 'start' class is added, trigger the animation */
-.animate__animated.start {
-  opacity: 1;
-  transform: translateY(0);
 }
