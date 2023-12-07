@@ -270,9 +270,14 @@
     </footer>
     <div class="copyright">&copy; 2023-2-24 Copyright by Filippos Tsakiris</div>
 
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/dist/email.min.js"
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("U4CmSlQI2idZaLqq-");
+   })();
+</script>
     ></script>
     <script src="index.js"></script>
   </body>
