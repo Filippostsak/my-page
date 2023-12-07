@@ -12,6 +12,10 @@
   color: white;
 }
 
+:root {
+  --animate-delay: 2s;
+}
+
 body {
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -239,7 +243,8 @@ h2:hover {
 
 .section1 .card-1 {
   position: relative;
-  width: 300px;
+  width: 20rem;
+  height: 28rem;
   display: flex;
   flex-direction: column;
   box-shadow: 0.1rem 0.1rem 10rem 1rem rgba(0, 0, 255, 0.81);
@@ -251,19 +256,6 @@ h2:hover {
     rgb(28, 28, 97)
   );
   transition: 0.4s ease;
-}
-
-.section1 .card-1:nth-child(1):hover {
-  width: 350px;
-  font-size: 2rem;
-}
-
-.section1 .card-1:nth-child(2):hover {
-  width: 350px;
-}
-
-.section1 .card-1:nth-child(3):hover {
-  width: 350px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -281,7 +273,7 @@ h2:hover {
 .section1 .card-1 h3 {
   padding: 1rem 0;
   font-size: 1.3rem;
-  color: bisque;
+  color: rgb(209, 168, 118);
 }
 
 .section1 .card-1 .img {
@@ -293,11 +285,13 @@ h2:hover {
 
 .section1 .card-1 p {
   font-size: 0.8rem;
+  text-align: justify;
 }
 
 .card-1 a {
+  margin-top: 1.5rem;
   cursor: pointer;
-  color: rgb(218, 192, 45);
+  color: rgb(233, 202, 26);
   font-size: 0.7rem;
   font-weight: bold;
   position: absolute;
@@ -305,6 +299,14 @@ h2:hover {
   height: 30rem;
   left: 13rem;
   top: 24.5rem;
+  transition: 0.3s ease;
+  width: 7rem;
+  height: 2rem;
+}
+
+.card-1 a:hover {
+  font-size: 1rem;
+  left: 11rem;
 }
 
 footer {
@@ -543,7 +545,7 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 }
 
 .section2 .knowledge .card-2 .h3-card-2 {
-  color: gold;
+  color: rgb(209, 168, 118);
   text-align: center;
   padding-bottom: 1rem;
   font-size: 1rem;
@@ -576,4 +578,17 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 .btns-sec2 a:hover {
   font-size: 1rem;
   font-weight: bolder;
+}
+
+/* Initially hide the animation */
+.animate__animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* When the 'start' class is added, trigger the animation */
+.animate__animated.start {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -1,3 +1,5 @@
+document.documentElement.style.setProperty("--animate-duration", "2s");
+
 // Initialize EmailJS
 emailjs.init("U4CmSlQI2idZaLqq-"); // Replace with your EmailJS user ID
 
