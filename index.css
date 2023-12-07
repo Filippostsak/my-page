@@ -288,7 +288,7 @@ h2:hover {
   padding: 1rem 0;
   max-width: 18rem;
   width: 100%;
-  height: auto;
+  height: 15rem;
 }
 
 .section1 .card-1 p {
@@ -301,8 +301,10 @@ h2:hover {
   font-size: 0.7rem;
   font-weight: bold;
   position: absolute;
-  left: 210px;
-  top: 450px;
+  width: 30rem;
+  height: 30rem;
+  left: 13rem;
+  top: 24.5rem;
 }
 
 footer {
@@ -548,44 +550,30 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 }
 
 .section2 .knowledge .card-2 img {
-  padding-bottom: 0.6rem;
   width: 8rem;
   height: 8rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  background: linear-gradient(to right, purple, black);
+  margin-bottom: 0.5rem;
 }
 
 .btns-sec2 {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-bottom: 1.2rem;
 }
 
-.btns-sec2 .card2-btn {
-  border: none;
-  margin-top: 0.5rem;
-  width: 6rem;
-  font-size: 1rem;
+.btns-sec2 a {
   text-align: center;
-  border-radius: 2.5rem;
-  background: linear-gradient(to right, rgb(58, 58, 200), rgb(183, 23, 23));
-  box-shadow: 0.1rem 0.1rem 1rem;
-  color: black;
-  margin-bottom: 2.2rem;
-  cursor: pointer;
-}
-
-.rating {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  text-align: center;
-  top: 2.5rem;
-}
-
-.fa-star {
-  cursor: pointer;
-  font-size: 0.7rem;
-}
-
-.fa-star.active {
+  font-size: 0.8rem;
   color: gold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.btns-sec2 a:hover {
+  font-size: 1rem;
+  font-weight: bolder;
 }
