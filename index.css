@@ -422,6 +422,12 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   height: 2rem;
 }
 
+.email-form .btn-2 input {
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+
 @media only screen and (max-width: 900px) {
   .email-form .btn-2 {
     width: 24rem;
