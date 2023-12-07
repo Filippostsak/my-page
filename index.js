@@ -1,3 +1,4 @@
+// Initialize EmailJS
 emailjs.init("U4CmSlQI2idZaLqq-"); // Replace with your EmailJS user ID
 
 document
