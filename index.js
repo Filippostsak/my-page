@@ -1,19 +1,24 @@
-emailjs.init("U4CmSlQI2idZaLqq-"); // Replace with your user ID from EmailJS
+emailjs.init("U4CmSlQI2idZaLqq-"); // Replace with your EmailJS user ID
 
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Get the user's email address from the form input
     var userEmailAddress = document.getElementById("user_email").value;
 
-    // Define the parameters to send to EmailJS
+    // Simple regex to validate email format
+    var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!emailRegex.test(userEmailAddress)) {
+      alert("Please enter a valid email address.");
+      return; // Stop the function if the email is not valid
+    }
+
     var templateParams = {
-      to_email: userEmailAddress,
+      user_email: userEmailAddress, // User's email address
+      to_email: userEmailAddress, // Destination of the auto-reply email
     };
 
-    // Send the email using EmailJS
     emailjs.send("service_qdsr9hd", "template_qpw2wqi", templateParams).then(
       function (response) {
         console.log("SUCCESS!", response.status, response.text);

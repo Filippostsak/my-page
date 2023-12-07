@@ -420,6 +420,7 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   display: flex;
   width: 30rem;
   height: 2rem;
+  margin-top: 1rem;
 }
 
 .email-form .btn-2 input {
