@@ -250,7 +250,7 @@
           <a href="aboutMe.html">About me</a>
           <a href="contact.html">Contact</a>
         </div>
-        <div class="email-form">
+        <div class="email-form" id="contact-form">
           <h3>Write your email and i will contact you</h3>
           <br />
           <p>If you want something specific feel free to ask:</p>
@@ -259,18 +259,22 @@
           <div class="btn-2">
             <input
               type="email"
-              name="email"
+              name="user_email"
               placeholder="email address"
-              id="email"
+              id="user_email"
               required
             />
-            <button>Send</button>
+            <button type="submit">Send</button>
           </div>
         </div>
       </div>
     </footer>
     <div class="copyright">&copy; 2023-2-24 Copyright by Filippos Tsakiris</div>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/dist/email.min.js"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
