@@ -33,3 +33,35 @@ document
       }
     );
   });
+
+$(document).ready(function () {
+  function isElementInView(element) {
+    var elementTop = $(element).offset().top;
+    var elementBottom = elementTop + $(element).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  }
+
+  function animateElements() {
+    $(
+      ".element-to-animate, .element-to-animate-left, .element-to-animate-up"
+    ).each(function () {
+      if (isElementInView(this) && !$(this).hasClass("animated")) {
+        $(this).css("visibility", "visible").css("opacity", "1");
+
+        if ($(this).hasClass("element-to-animate")) {
+          $(this).addClass("animated-element");
+        } else if ($(this).hasClass("element-to-animate-left")) {
+          $(this).addClass("animated-element-left");
+        } else if ($(this).hasClass("element-to-animate-up")) {
+          $(this).addClass("animated-element-up");
+        }
+      }
+    });
+  }
+
+  // Run on scroll and initially
+  $(window).scroll(animateElements);
+  animateElements();
+});
