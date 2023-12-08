@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,17 +17,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
         <div class="logo">
-          <a href="index.html"><img src="F.png" alt="my-logo" /></a>
+          <a href="/html/index.html"><img src="/img/F.png" alt="my-logo" /></a>
         </div>
         <div class="menu">
-          <a href="portfolio.html">Portfolio</a>
-          <a href="aboutMe.html">About Me</a>
-          <a href="contact.html">Contact</a>
+          <a href="/html/portfolio.html">Portfolio</a>
+          <a href="/html/aboutMe.html">About Me</a>
+          <a href="/html/contact.html">Contact</a>
         </div>
         <div class="social">
           <a href="https://www.instagram.com/philippos_tsk/"
@@ -37,32 +48,42 @@
         </div>
       </nav>
     </header>
-    <footer>
-      <div class="footer-1">
-        <div class="menu-2">
-          <a href="portfolio.html">Portfolio</a>
-          <a href="aboutMe.html">About me</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="email-form">
-          <h3>Write your email and i will contact you</h3>
-          <br />
-          <p>If you want something specific feel free to ask:</p>
-          <br />
-          <a href="">here!</a><br />
-          <div class="btn-2">
-            <input
-              type="email"
-              name="email"
-              placeholder="email address"
-              id="email"
-              required
-            />
-            <button>Send</button>
+    <footer class="element-to-animate-up">
+      <form id="contact-form">
+        <div class="footer-1">
+          <div class="menu-2">
+            <a href="/html/portfolio.html">Portfolio</a>
+            <a href="/html/aboutMe.html">About me</a>
+            <a href="/html/contact.html">Contact</a>
+          </div>
+          <div class="email-form">
+            <h3>Write your email and I will contact you</h3>
+            <p>If you want something specific feel free to ask:</p>
+            <a href="">here</a>
+            <div class="btn-2">
+              <input
+                type="email"
+                name="user_email"
+                placeholder="email address"
+                id="user_email"
+                required
+              />
+              <button type="submit">Send</button>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
     </footer>
     <div class="copyright">&copy; 2023-2-24 Copyright by Filippos Tsakiris</div>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("U4CmSlQI2idZaLqq-");
+})();
+</script>
+</script>
+<script src="/js/index.js"></script>
   </body>
 </html>
