@@ -12,10 +12,14 @@
   color: white;
 }
 
+:root {
+  --animate-delay: 2s;
+}
+
 body {
   box-sizing: border-box;
   font-family: Georgia, "Times New Roman", Times, serif;
-  width: 98%;
+  width: 100%;
   height: auto;
   font-size: 10px;
   background-color: black;
@@ -174,14 +178,16 @@ hr {
 .nav .social a:nth-child(3):hover {
   font-size: 1.2rem;
 }
-
-ooter {
+footer {
   margin-top: 4rem;
   width: 98%;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation-name: moveInUp;
+  animation-duration: 3s;
+  animation-delay: 1s;
 }
 
 footer .footer-1 {
@@ -290,6 +296,14 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   display: flex;
   width: 30rem;
   height: 2rem;
+  margin-top: 1rem;
+}
+
+.email-form .btn-2 input {
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 900px) {
@@ -327,7 +341,7 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 }
 
 .copyright {
-  width: 98%;
+  width: 100%;
   background: linear-gradient(
     to right,
     rgba(219, 141, 141, 0.78),
@@ -336,6 +350,110 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   border-radius: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+element-to-animate,
+.element-to-animate-left,
+.element-to-animate-up {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.element-to-animate.animated,
+.element-to-animate-left.animated,
+.element-to-animate-up.animated {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.element-to-animate.animated {
+  animation-name: moveInRight;
+}
+.element-to-animate-left.animated {
+  animation-name: moveInLeft;
+}
+.element-to-animate-up.animated {
+  animation-name: moveInUp;
+}
+
+.animated-element {
+  animation: moveInRight 3s forwards;
+}
+
+.animated-element-left {
+  animation: moveInLeft 3s forwards;
+}
+
+.animated-element-up {
+  animation: moveInUp 3s forwards;
 }
