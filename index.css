@@ -181,7 +181,7 @@ hr {
 
 h1 {
   height: 1rem;
-  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
   font-style: oblique;
   margin-top: 1rem;
@@ -207,9 +207,10 @@ h1:hover {
 }
 
 h2 {
-  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
   width: 20rem;
   height: 4rem;
+  font-style: italic;
   text-align: center;
   font-size: 1.2rem;
   box-shadow: 0.1rem 0.1rem 1.5rem rgb(218, 123, 123);
@@ -490,7 +491,7 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   color: #fff;
   padding: 10px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   border-radius: 1rem;
 }
 
@@ -793,6 +794,7 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   width: 13rem;
   padding: 1rem;
   border-radius: 12rem;
+  background: linear-gradient(to left(purple, black));
 }
 
 .finalBtn .btn-3 {
