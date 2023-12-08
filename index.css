@@ -657,26 +657,22 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 .element-to-animate,
 .element-to-animate-left,
 .element-to-animate-up {
-  visibility: hidden; /* Initially hidden */
-  opacity: 0; /* Fully transparent */
-  transform: translateY(
-    20px
-  ); /* Slightly lower position for the animation effect */
-  transition: opacity 0.6s ease, transform 0.6s ease; /* Transition for opacity and transform */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Animation styles */
 .element-to-animate.animated,
 .element-to-animate-left.animated,
 .element-to-animate-up.animated {
-  display: block; /* Elements are now part of the document flow */
+  display: block;
   opacity: 1;
   transform: translateY(0);
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
-/* Specific animations */
 .element-to-animate.animated {
   animation-name: moveInRight;
 }
@@ -687,7 +683,6 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   animation-name: moveInUp;
 }
 
-/* Adjusted animation properties with delay */
 .animated-element {
   animation: moveInRight 3s forwards;
 }
@@ -698,4 +693,129 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
 
 .animated-element-up {
   animation: moveInUp 3s forwards;
+}
+
+.finalsection {
+  box-shadow: 0.1rem 0.1rem 10rem 1rem rgba(0, 0, 255, 0.81);
+  border-radius: 1rem;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+}
+
+.finalh2 {
+  letter-spacing: 0.6rem;
+}
+
+.finalsection {
+  margin-top: 10rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.info-flex h3 {
+  font-size: 1.6rem;
+  padding-top: 4rem;
+  margin-left: 1rem;
+}
+
+.info-flex p {
+  width: 10rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.info-column {
+  gap: 1rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.photo-info-info {
+  width: 10rem;
+  height: 20rem;
+  border-radius: 1.2rem;
+}
+
+.reversed-info-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reversed-info-flex h3 {
+  font-size: 1.6rem;
+  padding-top: 4rem;
+  margin-right: 1rem;
+}
+
+.reversed-info-flex p {
+  margin-right: 1rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.reversed-h3 {
+  text-align: right;
+}
+
+.reversed-info-column {
+  gap: 1rem;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.photo-reversed-info {
+  width: 10rem;
+  height: 20rem;
+  border-radius: 1.2rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .finalsection {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .info-column,
+  .reversed-info-column {
+    display: block;
+    width: 45%;
+  }
+
+  .photo-info-info,
+  .photo-reversed-info {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .info-column,
+  .reversed-info-column {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .finalsection {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
