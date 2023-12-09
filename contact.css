@@ -180,8 +180,7 @@ hr {
 }
 footer {
   margin-top: 4rem;
-  width: 98%;
-  height: 200px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -198,7 +197,6 @@ footer .footer-1 {
     rgba(219, 141, 141, 0.78),
     rgb(28, 28, 97)
   );
-  border-radius: 1rem;
 }
 
 footer .footer-1 .menu-2 {
@@ -351,11 +349,8 @@ footer .footer-1 .menu-2 a:nth-child(3):hover {
   padding: 10px 0;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  border-radius: 1rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
 }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
