@@ -13,7 +13,7 @@
 }
 
 :root {
-  --animate-delay: 2s;
+  --animate-delay: 1s;
 }
 
 body {
@@ -31,6 +31,9 @@ hr {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: grid;
   grid-template-columns: repeat(1fr 2fr 1fr);
   grid-template-rows: 2fr 2fr 2fr;
@@ -450,4 +453,80 @@ element-to-animate,
 
 .animated-element-up {
   animation: moveInUp 3s forwards;
+}
+
+.h1-contact {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+.h2-contact {
+  padding-top: 1.2rem;
+}
+
+table {
+  width: 100%;
+  position: relative;
+  width: 95%;
+  min-height: 15rem;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+}
+
+td {
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  width: 4rem;
+  text-align: center;
+}
+
+.td-span {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  right: 7.3rem;
+  top: 5rem;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  text-shadow: 1rem 0.1rem 1rem blue;
+}
+
+.td-flex {
+  width: 100%;
+  position: absolute;
+  top: 13.5rem;
+  left: 0.4rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .td-span {
+    left: 23rem;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+  .td-flex {
+    left: 11.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .td-span {
+    left: 45rem;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  .td-flex {
+    left: 25.4rem;
+  }
 }

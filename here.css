@@ -255,7 +255,7 @@ hr {
     transform: translateY(0);
   }
 }
-element-to-animate,
+.element-to-animate,
 .element-to-animate-left,
 .element-to-animate-up {
   visibility: hidden;
