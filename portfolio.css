@@ -451,3 +451,137 @@ element-to-animate,
 .animated-element-up {
   animation: moveInUp 3s forwards;
 }
+
+.row {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  display: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content h4 {
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .content h4 {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.content img {
+  border-radius: 0.5rem;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+  padding: 10px;
+  border-radius: 1.2rem;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem;
+}
+
+.show {
+  display: block;
+}
+
+.btn-container {
+  width: 95%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    rgba(219, 141, 141, 0.78),
+    rgb(28, 28, 97)
+  );
+}
+.btn:hover {
+  background-color: #d2cccc;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.h2-portfolio {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.link p {
+  margin: 0;
+  width: 15rem;
+  align-self: flex-start;
+}
+
+.link a {
+  width: 1.5rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) {
+  .link p {
+    margin-right: 10rem;
+    width: 100%;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .link p {
+    margin-right: 27rem;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
