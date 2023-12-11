@@ -202,19 +202,31 @@ footer .footer-1 {
 @media only screen and (min-width: 900px) {
   #footer-1 {
     position: relative;
-    height: 5rem;
+    height: 10rem;
+    padding-bottom: 10rem;
+  }
+  #contact-form {
+    display: flex;
   }
   #menu-2 a {
     position: absolute;
   }
   #menu-2 a:nth-child(1) {
-    top: 0.1rem;
+    top: 3.3rem;
+    left: 2rem;
   }
   #menu-2 a:nth-child(2) {
-    top: 0.8rem;
+    top: 4rem;
+    left: 2rem;
   }
   #menu-2 a:nth-child(3) {
-    top: 2.5rem;
+    top: 6rem;
+    left: 2rem;
+  }
+  .email-form {
+    position: absolute;
+    left: 80rem;
+    top: 3rem;
   }
 }
 
